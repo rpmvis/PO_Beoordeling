@@ -1,0 +1,2 @@
+DBCC SHRINKDATABASE (Beoord, 10)
+GO

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<META NAME="GENERATOR" Content="Microsoft Visual Studio 7.0">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<TITLE>Foutmelding</TITLE>
+		<script language="JavaScript" src="js/General.js" type="text/javascript"></script>
+		<LINK media="screen" href="css/BEOstyles.css" type="text/css" rel="stylesheet">
+		<LINK media="print" href="css/BEOstyles_print.css" type="text/css" rel="stylesheet">
+		<script language="javascript">
+			function init()
+			{
+				var sErrMsg = query_value(document.location.href, "errmsg");  
+				document.getElementById("tdFoutmelding").innerHTML = sErrMsg; 
+				
+				var IsBeheerder = query_value(document.location.href, "isbeheerder");
+				if (IsBeheerder == 'true'){
+					document.getElementById("content").id = "content_beheerder";
+				}
+			}
+		</script>
+	</HEAD>
+	<BODY class='body' onload="init();" MS_POSITIONING="GridLayout">
+		<div id="top">
+			<table class="DROtable" ID="Table1">
+				<tr>
+					<td colspan="3" align="right">
+						<span class="NoPrint"></span>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="3" valign="top"><IMG class="DROpict" alt="logo Gemeente Amsterdam" src="Pics\logo\menu_logo.gif" align="left"></td>
+					<td valign="top"><IMG class="DROpict" alt="logo DRO" src="Pics\headers\amsterdamdro_home_logo.gif"></td>
+					<td width="100%" class="appname">Beoordelingsprogramma</td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;<A HREF='javascript:history.back();'>terug</A></td>
+				</tr>
+				<tr>
+					<td class="titelbalk" colspan="2">Foutmelding</td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="content">
+			<table class="DROTable" ID="Table2">
+				<TR>
+					<td colSpan="2"><span class="MFkopbreedWit">Foutmelding</span>
+					</td>
+				</TR>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td class="TD" id="tdFoutmelding" colspan="2"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="leftnav"><span class="NoPrint"></span></div>
+		<div id="rightnav"><img id="printbutton" class="NoPrint" onclick="PrintIt();" src='Pics/buttons/print.gif' alt='Print vriendelijke versie'></div>
+	</BODY>
+</HTML>

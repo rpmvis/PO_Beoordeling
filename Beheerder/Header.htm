@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<link rel="STYLESHEET" href="css/Default.css" type="text/css">
+			<script language="javascript">
+		function OnChange(codeName)
+		{
+		  // instellen actie voor form nav keuze uit optielijst
+			if("" == codeName)
+				document.HeaderForm.action="About.htm";
+			else
+				document.HeaderForm.action="Editors/" + codeName + ".aspx";
+			document.HeaderForm.submit();
+		}
+			</script>
+	</head>
+	<body topmargin="0" bottommargin="0" leftmargin="0">
+		<form method="get" id="HeaderForm" name="HeaderForm" target="main">
+			<table bgcolor="#f0f1f3" height="100%" width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td colspan="3"><img src="Images/n.gif"></td>
+				</tr>
+				<tr>
+					<td width="5"><img src="Images/n.gif"></td>
+					<td>
+						<select onchange="OnChange(this.options[this.selectedIndex].value)">
+							<option value="" selected>--- Tables ---</option>
+							<option value='tAfde'>
+								&nbsp; tAfde</option>
+							<option value='tAfde_aliassen'>
+								&nbsp; tAfde_aliassen</option>
+							<option value='tAfde_Peri'>
+								&nbsp; tAfde_Peri</option>
+							<option value='tblBeo'>
+								&nbsp; tblBeo</option>
+							<option value='tblBeoScore'>
+								&nbsp; tblBeoScore</option>
+							<option value='tblFB'>
+								&nbsp; tblFB</option>
+							<option value='tComp'>
+								&nbsp; tComp</option>
+							<option value='tElem'>
+								&nbsp; tElem</option>
+							<option value='tFunc'>
+								&nbsp; tFunc</option>
+							<option value='tMenu'>
+								&nbsp; tMenu</option>
+							<option value='tMenuItem'>
+								&nbsp; tMenuItem</option>
+							<option value='tNaamDeel'>
+								&nbsp; tNaamDeel</option>
+							<option value='tNaamDeelType'>
+								&nbsp; tNaamDeelType</option>
+							<option value='tPenO'>
+								&nbsp; tPenO</option>
+							<option value='tPeriode'>
+								&nbsp; tPeriode</option>
+							<option value="">--- Views ---</option>
+						</select>
+					</td>
+					<td align="right"><font size="5" color="#aec2dd"><b>Beoordelingsprogramma</b> &nbsp;
+						</font>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" valign="bottom" height="1" bgcolor="#aec2dd"><img src="Images/n.gif"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

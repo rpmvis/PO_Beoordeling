@@ -1,0 +1,424 @@
+#leftnav, #rightnav
+{
+  POSITION: absolute;
+	margin-top: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+	padding-right: 3px;
+	padding-left: 3px;
+  
+  color: #000000;
+  height: 300px;
+}
+
+#leftnav
+{
+  left: 0px;
+  top: 135px;
+  width: 12%;
+}
+
+#rightnav
+{
+  left: 88%;
+  top: 135px;
+  width: 12%;
+  z-index: 3;
+}
+
+#list3
+{
+}
+
+#top, #content, .content2, #content_beheerder
+{
+  width: 75%;
+	left: 12%;
+	/* margin-top: 0px;
+	margin-left:0px; */
+
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#top_leftalign, #content_beheerder_leftalign
+{
+  width: 100%;
+	left: 0px;
+	/* margin-top: 0px;
+	margin-left:0px; */
+
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#content
+{
+	position:absolute;
+  background-color: #0877C3;
+  top: 135px;
+  height: 300px;
+}
+
+#content_beheerder, #content_beheerder_leftalign
+{
+	position:absolute;
+	background-color: "#aec2dd";
+	/* background-color: #669999; zeegroen */
+  top: 135px;
+  height: 300px;
+}
+
+.content2 /* bijv. na een page break */
+{
+	position:relative;
+	background-color: #0877C3;
+}
+
+
+#top, #top_leftalign
+{
+	position:absolute;
+  top: 0px;
+	height : 135px;
+  background-color: white;	
+}
+
+
+
+#top span.col1, #top_leftalign span.col1
+{
+	position: relative;display: inline; float: left; width : 45px; BACKGROUND-color: white
+}
+#top span.col2, #top_leftalign span.col2
+{
+	position: relative; display: inline; margin-left: 100px;BACKGROUND-color: white; text-align: left;
+}
+#top span.col3, #top_leftalign span.col3
+{
+	position: relative; display: inline; padding-top: 20px; margin-right: 0px; float: right; text-align: right; BACKGROUND-color: white; font-weight: bold; font-size: 11px;
+}
+#top span.titelbalk, #top_leftalign span.titelbalk
+{
+	display: block; POSITION: relative; top: 40px; text-align: left; color: #545454; background-color: #D9D8D8; font-size: 15px; font-weight :bold; letter-spacing: 1px; border-top-style:solid; border-top-color: black; border-top-width: 1px;
+}
+
+#top, #top_leftalign 
+{
+	font-weight: bold; font-size: 11px;
+}
+
+.appname
+{
+	font-weight: bold;
+	font-size: 11px;
+	display: inline;
+	text-align: left;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 8px;
+}
+
+#top .titelbalk, #top_leftalign .titelbalk
+{left: 0px; top: 0px; position: relative; display: block; color: #545454; background-color: #D9D8D8; font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 15px; font-weight :bold; padding: 0px 0px 0px 18px; margin: 0px 0px 0px 0px; letter-spacing: 1px; width: 100%; border-top-style:solid; border-top-color: Black; border-top-width: 0px;
+}
+
+div.row span.label 
+{
+	float: left; width: 100px; text-align: right;
+}
+div.row span.text 
+{
+	float: right; width: 335px; text-align: left;
+}
+div.pageheader span.right 
+{
+	float: right; text-align: right; font-weight: bold; font-size: 11px; display: inline
+}
+#printbutton
+{
+	float: right; border: 0; width: 27px; height: 20px
+}
+TABLE.DROTable, TABLE.DROTable_relativewidth, TABLE.DROTable_report
+{
+	background-color: #FFFFFF; font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px;
+}
+
+TABLE.DROTable
+{
+	width: 500px; 
+}
+
+TABLE.DROTable_report
+{
+	border-color: gray;
+	border-width: 1px;
+	width: 100%;
+}
+
+
+
+.DROTable.TD, .DROTable.TD2, .DROTable.TD_kop,  .DROTable.TD2_kop, .DROTable.TD_kop_blauw
+		{
+			font-family: Verdana, Geneva, Helvetica, sans-serif;
+			margin: 0px 0x 0px 0px;
+			height: 28px;
+		} 
+		
+.DROTable.TD, DROTable_report.TD
+	{
+		font-size: 11px;
+		padding: 0px 2px 0px 18px;
+	}		
+
+.DROTable.TD2, DROTable_report.TD2
+	{
+		font-size: 11px;
+		padding: 0px  2px 0px 3px;
+	} 
+.DROTable.TD_kop
+	{
+		font-size: 11px;
+		font-weight: normal;
+		padding: 0px 2px 0px 18px;
+	  vertical-align: sub; 	
+	}
+
+.DROTable.TD_rijkop, .DROTable_report.TD_rijkop, .DROTable_relativewidth.TD_rijkop
+	{
+		display: inline; 
+		vertical-align: super; 
+		font-size: 11px;
+		font-weight: normal;
+		padding: 0px 2px 0px 18px;
+	}
+
+	
+.DROTable.TD2_kop 
+	{
+		font-size: 11px;
+		font-weight: normal;
+		padding: 0px  2px 0px 3px;
+		vertical-align: sub;
+	}
+
+.DROTable.TD2_rijkop, DROTable_report.TD2_rijkop, .DROTable_relativewidth.TD2_rijkop
+	{
+		vertical-align: super;
+		font-size: 11px;
+		font-weight: normal;
+		padding: 0px  2px 0px 3px;
+	}
+
+.DROTable.TD_kop_blauw
+	{
+		color: #087FC3;
+		font-size: 11px;
+		font-weight: bold;
+		padding: 0px 2px 0px 18px;
+		vertical-align: sub;
+	}
+
+.body
+{
+	left: 0px;
+	top: 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+	.links_horz{
+	padding: 3px 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: 0.1em;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	/* border-bottom: 1px solid gray; */
+	}
+
+	/* omklappen lijst naar een/meer horizontale regel(s) */ 
+	.links_horz li{
+	list-style: none;
+	display: inline;
+	margin-right: 5px;
+	word-spacing : 5px;
+	/* margin: 0; */
+	}
+	
+	.links_vert li
+	{
+		list-style: none;
+		padding-bottom: 12px;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;
+		text-align: left;  
+	}
+
+	.links_horz li a, .links_vert li a{
+	text-decoration: none;
+	/* padding: 3px 0.5em; */
+	/* border: 1px solid #778; */
+	/* border-bottom: none; */
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	background: white;
+	}
+
+	.links_horz li a:link, #links_horz li a:visited, .links_vert li a:link, #links_vert li a:visited, a:visited {
+		color: blue;
+		padding-right: 5px; 
+	}
+
+	.links_horz li a:hover, .links_vert li a:hover{
+	text-decoration: underline;
+	}
+
+	.links_horz li a.current, .links_vert li a.current{}
+
+.MFkopbreedWit
+	{
+	display: inline;
+	color: #087FC3;
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight :bold;
+	padding: 6px 0px 6px 18px;
+	margin: 0px 0px 0px 0px;
+	letter-spacing: 2px;
+	}	
+
+.MFbalksmalDblauw
+{
+	display: block;
+	height: 24px;
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: hand;
+	font-family: Arial, Geneva, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight :bold;
+	padding: 0px 0px 0px 0px;
+	margin:  0px 0px 0px 0px;
+	letter-spacing: 1px;
+}
+
+.RadioButtonList
+{
+	font-family: Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 11px; 
+	vertical-align: super;  
+}
+
+.DRObtnDialog
+{
+	BACKGROUND-IMAGE: url(../Pics/buttons/Vergrootglas.bmp);
+	BACKGROUND-COLOR: #ffffff;
+	WIDTH: 22px;
+	BACKGROUND-REPEAT: no-repeat;
+	HEIGHT: 22px;
+	vertical-align: baseline; 
+	PADDING-TOP: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 0px;
+	display:inline; 
+	margin-top : 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px; 
+}
+
+.DRObtnDialog_disabled
+{
+	BACKGROUND-IMAGE: url(../Pics/buttons/Vergrootglas_disabled.bmp);
+	BACKGROUND-COLOR: "#E0E0E0";
+	WIDTH: 22px;
+	BACKGROUND-REPEAT: no-repeat;
+	HEIGHT: 22px;
+	vertical-align: baseline; 
+	PADDING-TOP: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 0px;
+	display:inline; 
+	margin-top : 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px; 
+}
+
+.DRObtnDialog_small
+{
+	BACKGROUND-IMAGE: url(../Pics/buttons/Vergrootglas_klein.bmp);
+	WIDTH: 18px;
+	BACKGROUND-REPEAT: no-repeat;
+	HEIGHT: 18px;
+	vertical-align: baseline; 
+	BACKGROUND-COLOR: #ffffff;
+	PADDING-TOP: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 0px;
+	display:inline; 
+	margin-top : 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px; 
+}
+
+.dg, .dg ASP:DropDownList
+{
+	font-size: 11pt;
+}
+
+.dgHeader {
+	/* BACKGROUND: #aec2dd; color:#cc0000; font-weight:bold; text-align:center; */
+	BACKGROUND: #aec2dd; color:red; font-weight:bold; text-align:center;
+}
+.dgItem {
+	BACKGROUND: #ffffff
+}
+.dgAltItem {
+	/* BACKGROUND: #f0f1f3 */
+	BACKGROUND: #ffffff
+}
+
+.dgSelItem {
+	
+}
+.dgEditItem {
+	font-size: 9pt;
+}
+.dgFooter 
+{
+	font-size: 9pt;
+	BACKGROUND: #ffffff;
+}
+
+.dgPager {
+	BACKGROUND: #ffffff;
+}
+
+.dgIns_ON
+{ visibility: visible; 
+}
+
+.dgIns_OFF
+{ visibility: hidden;  
+}
+
+.inputON
+{
+	background: white;
+}
+
+.inputOFF
+{
+	background: whitesmoke;
+}

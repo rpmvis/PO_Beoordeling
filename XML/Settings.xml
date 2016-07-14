@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<tblSettings>
+		<dbs>360FB</dbs>
+		<ConnString>server=localhost;uid=sa;pwd=;database=360FB_NedComp</ConnString>
+	</tblSettings>
+	<tblSettings>
+		<dbs>BEO</dbs>
+		<ConnString>server=localhost;uid=sa;pwd=;database=Beoord</ConnString>
+	</tblSettings>
+	<tblSettings>
+		<dbs>BEO_SQLOLEDB</dbs>
+		<ConnString>Provider=SQLOLEDB;server=localhost;uid=sa;pwd=;database=Beoord</ConnString>
+	</tblSettings>
+</root>

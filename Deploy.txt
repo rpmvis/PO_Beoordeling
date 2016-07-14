@@ -1,0 +1,13 @@
+SQL Server Connnection
+
+
+Last production build:
+- loop code na op @@@
+- Zet in de Configuration Manager de actieve configuratie op 'Release'
+- geef een versienummer
+- Rebuild solution
+- maak een kopie van de solution onder een 'Prod' directory
+
+Installeren op DRO
+- let goed op bestand \XML\Settings.xml; hierin moet een juiste connectiestring staan naar de database
+

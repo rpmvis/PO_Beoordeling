@@ -1,0 +1,17 @@
+<%@ Page language="c#" Codebehind="Beheerder.aspx.cs" AutoEventWireup="false" Inherits="PO_Beoordeling.Beheerder" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+	<head>
+		<title>Default</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	</head>
+	<body MS_POSITIONING="GridLayout">
+		<form id="Beo" method="post" runat="server">
+			<DIV style="DISPLAY:inline; FONT-WEIGHT:bold; WIDTH:70px; HEIGHT:15px" ms_positioning="FlowLayout">U 
+				wordt doorgeschakeld!</DIV>
+		</form>
+	</body>
+</html>

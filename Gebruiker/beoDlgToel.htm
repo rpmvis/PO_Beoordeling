@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title></title>
+		<meta content="Microsoft Visual Studio 7.0" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<script language="JavaScript" src="../js/General.js" type="text/javascript"></script>
+		<script language="JavaScript" src="../js/beoValidation.js" type="text/javascript"></script>
+		<LINK href="../css/BEOstyles.css" type="text/css" rel="stylesheet" media="screen">
+		<LINK href="../css/BEOstyles_print.css" type="text/css" rel="stylesheet" media="print">
+		<script language="javascript">
+			function ReadParams() {
+				MyArgs = window.dialogArguments;
+				
+				if(MyArgs == null) return; // test
+
+				var sHeader1In = MyArgs[0].toString();
+				
+				setVal("txtHeader1", sHeader1In);  
+				getEl("txtHeader1").readOnly = true;
+
+				var sHTML = MyArgs[1].toString();
+				setInHTML("txtIndi", sHTML);
+				
+				var sScore = MyArgs[2].toString();
+				setInHTML("tdScor", "Uw waardering: <b>" + sScore + "</b>");
+
+				var sUwToel = MyArgs[3].toString();
+				setInHTML("lblGeefToel",sUwToel);				
+				
+				var sTextIn = MyArgs[4].toString();
+				setVal("txtToel",sTextIn);
+				
+				var bBevroren = MyArgs[5].toString();
+
+				getEl("txtToel").disabled = !bBevroren;
+				if (bBevroren){
+					getEl("txtToel").focus(); 	
+				}
+				
+				document.title = "Vul s.v.p. uw toelichting in";
+			}
+
+			function WriteParams() {
+				var sText = getVal("txtToel");
+				var MyArgs = new Array(sText);
+				window.returnValue = MyArgs;
+				CloseWindow();
+			}
+		</script>
+	</HEAD>
+	<BODY class="blauw" bgColor="whitesmoke" style="WIDTH: 621px; HEIGHT: 456px" onload="ReadParams();">
+		<form id="dlgToelichting" method="post">
+			<input class="MFbalksmalLGrijs" id="txtHeader1" type="text" value="Invoer toelichting" width="100%" NAME="txtHeader1" size="93">
+			<table style="MARGIN-LEFT: 0px; WIDTH: 594px; MARGIN-RIGHT: 25px; POSITION: relative; HEIGHT: 415px" ID="Table1">
+				<tr>
+					<td id="table1_sub">
+						<table bgColor="whitesmoke" ID="Table2">
+							<tr>
+								<td>
+								</td>
+								<td id="tdScor">Uw&nbsp;waardering: ?</td>
+							</tr>
+							<TR>
+								<TD style="WIDTH: 100%" vAlign="top" colSpan="2"></TD>
+							</TR>
+							<TR>
+								<td>
+								</td>
+								<TD id="lblGeefToel" style="WIDTH: 100%" vAlign="top">Uw toelichting:</TD>
+							</TR>
+							<tr>
+								<td class="TD2" id="txtIndi" style="WIDTH: 100%" vAlign="top"></td>
+								<td><TEXTAREA id="txtToel" name="Toelichting" onkeyup="CheckLen(this, 255)" style="WIDTH: 300px; HEIGHT: 278px" rows="17" wrap="soft" cols="35"></TEXTAREA>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD align="right"><INPUT id="btnOK" style="WIDTH: 120px; HEIGHT: 32px" onclick="WriteParams()" type="button" value="OK" NAME="btnOK">
+					</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD align="right"><INPUT id="btnCancel" style="WIDTH: 120px; HEIGHT: 32px" onclick="CloseWindow()" type="button" value="Annuleer" name="Cancel">
+					</TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+			</table>
+		</form>
+	</BODY>
+</HTML>

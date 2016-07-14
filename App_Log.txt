@@ -1,0 +1,62 @@
+9:46:34 AM 1/29/2008	The statement has been terminated.
+INSERT statement conflicted with COLUMN FOREIGN KEY constraint 'FK_tAfde_Peri_tTL'. The conflict occurred in database 'Beoord', table 'tTL', column 'TLMsnr'.
+DALEngine::Exec_ActionQuery
+in query 'INSERT INTO tTL_Afde_Peri ([peri], [Afde], [TLMsnr]) VALUES (LEFT('9999', 10), LEFT('100000', 10), 999999)'
+Bron: Microsoft OLE DB Provider for SQL Server
+9:46:34 AM 1/29/2008	The statement has been terminated.
+INSERT statement conflicted with COLUMN FOREIGN KEY constraint 'FK_tAfde_Peri_tTL'. The conflict occurred in database 'Beoord', table 'tTL', column 'TLMsnr'.
+DALEngine::Exec_ActionQuery
+in query 'INSERT INTO tTL_Afde_Peri ([peri], [Afde], [TLMsnr]) VALUES (LEFT('9999', 10), LEFT('100000', 10), 999999)'
+Bron: Microsoft OLE DB Provider for SQL Server
+12:49:17 PM 2/22/2008	[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+12:49:17 PM 2/22/2008	[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+DALEngine::ExecQuery_DataReader
+in query 'SELECT m.MenuId, m.IsHorizontal, m.MenuLevel FROM tMenu m WHERE (m.MenuId = 'beoAlgemeen')'
+Bron: BO
+12:50:01 PM 2/22/2008	[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+12:50:01 PM 2/22/2008	[DBNETLIB][ConnectionOpen (Connect()).]SQL Server does not exist or access denied.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+DALEngine::ExecQuery_DataReader
+in query 'SELECT m.MenuId, m.IsHorizontal, m.MenuLevel FROM tMenu m WHERE (m.MenuId = 'beoAlgemeen')'
+Bron: BO
+1:48:05 PM 2/22/2008	Login failed for user 'sa'. Reason: Not associated with a trusted SQL Server connection.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+1:48:06 PM 2/22/2008	Login failed for user 'sa'. Reason: Not associated with a trusted SQL Server connection.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+DALEngine::ExecQuery_DataReader
+in query 'SELECT m.MenuId, m.IsHorizontal, m.MenuLevel FROM tMenu m WHERE (m.MenuId = 'beoAlgemeen')'
+Bron: BO
+1:48:45 PM 2/22/2008	Login failed for user 'sa'. Reason: Not associated with a trusted SQL Server connection.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+1:48:45 PM 2/22/2008	Login failed for user 'sa'. Reason: Not associated with a trusted SQL Server connection.
+Fout bij openen van een verbinding met de database.
+
+
+Bron: Microsoft OLE DB Provider for SQL Server
+DALEngine::ExecQuery_DataReader
+in query 'SELECT m.MenuId, m.IsHorizontal, m.MenuLevel FROM tMenu m WHERE (m.MenuId = 'beoAlgemeen')'
+Bron: BO

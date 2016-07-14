@@ -1,0 +1,943 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{7B4B948B-28B6-4155-B1F6-67FA01091858}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "PO_Beoordeling"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                RootNamespace = "PO_Beoordeling"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "Microsoft.JScript"
+                    AssemblyName = "Microsoft.JScript"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\Microsoft.JScript.dll"
+                />
+                <Reference
+                    Name = "BO"
+                    Project = "{4B8210E0-48C2-4BED-AED5-4DFA2976F60C}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Functions"
+                    Project = "{80CB78BA-0DCD-493F-9178-5CBC531E14CB}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder.aspx.cs"
+                    DependentUpon = "Beheerder.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder.aspx.resx"
+                    DependentUpon = "Beheerder.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "beoIFrame_server.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "beoIFrame_server.aspx.cs"
+                    DependentUpon = "beoIFrame_server.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "beoIFrame_server.aspx.resx"
+                    DependentUpon = "beoIFrame_server.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Default.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Default.aspx.cs"
+                    DependentUpon = "Default.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Default.aspx.resx"
+                    DependentUpon = "Default.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmBase.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmBase.aspx.cs"
+                    DependentUpon = "frmBase.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmBase.aspx.resx"
+                    DependentUpon = "frmBase.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmError.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmTable.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "frmTable.aspx.cs"
+                    DependentUpon = "frmTable.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "frmTable.aspx.resx"
+                    DependentUpon = "frmTable.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PO_Beoordeling.vsdisco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WebForm1.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WebForm1.aspx.cs"
+                    DependentUpon = "WebForm1.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WebForm1.aspx.resx"
+                    DependentUpon = "WebForm1.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behAlgemeen_Login.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behAlgemeen_Login.aspx.cs"
+                    DependentUpon = "behAlgemeen_Login.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behAlgemeen_Login.aspx.resx"
+                    DependentUpon = "behAlgemeen_Login.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behEinde.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behEinde.aspx.cs"
+                    DependentUpon = "behEinde.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behEinde.aspx.resx"
+                    DependentUpon = "behEinde.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behImport Excel.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behImport Excel.aspx.cs"
+                    DependentUpon = "behImport Excel.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behImport Excel.aspx.resx"
+                    DependentUpon = "behImport Excel.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behImport TXT.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behImport TXT.aspx.cs"
+                    DependentUpon = "behImport TXT.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behImport TXT.aspx.resx"
+                    DependentUpon = "behImport TXT.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML actX control XMLDOM.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML actX control XMLDOM.aspx.cs"
+                    DependentUpon = "behImport XML actX control XMLDOM.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML actX control XMLDOM.aspx.resx"
+                    DependentUpon = "behImport XML actX control XMLDOM.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML.aspx.cs"
+                    DependentUpon = "behImport XML.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behImport XML.aspx.resx"
+                    DependentUpon = "behImport XML.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behMenu.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behMenu.aspx.cs"
+                    DependentUpon = "behMenu.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behMenu.aspx.resx"
+                    DependentUpon = "behMenu.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\behRapport_onvoldoendes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\behRapport_onvoldoendes.aspx.cs"
+                    DependentUpon = "behRapport_onvoldoendes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\behRapport_onvoldoendes.aspx.resx"
+                    DependentUpon = "behRapport_onvoldoendes.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tAfde.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tAfde.aspx.cs"
+                    DependentUpon = "tAfde.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tAfde.aspx.resx"
+                    DependentUpon = "tAfde.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeo.aspx.cs"
+                    DependentUpon = "tblBeo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeo.aspx.resx"
+                    DependentUpon = "tblBeo.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeoScore.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeoScore.aspx.cs"
+                    DependentUpon = "tblBeoScore.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tblBeoScore.aspx.resx"
+                    DependentUpon = "tblBeoScore.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tComp.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tComp.aspx.cs"
+                    DependentUpon = "tComp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tComp.aspx.resx"
+                    DependentUpon = "tComp.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tElem.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tElem.aspx.cs"
+                    DependentUpon = "tElem.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tElem.aspx.resx"
+                    DependentUpon = "tElem.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\Test2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\Test2.aspx.cs"
+                    DependentUpon = "Test2.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\Test2.aspx.resx"
+                    DependentUpon = "Test2.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tFunc.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tFunc.aspx.cs"
+                    DependentUpon = "tFunc.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tFunc.aspx.resx"
+                    DependentUpon = "tFunc.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tPenO.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tPenO.aspx.cs"
+                    DependentUpon = "tPenO.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tPenO.aspx.resx"
+                    DependentUpon = "tPenO.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tProf.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tProf.aspx.cs"
+                    DependentUpon = "tProf.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tProf.aspx.resx"
+                    DependentUpon = "tProf.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tProf_Comp.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tProf_Comp.aspx.cs"
+                    DependentUpon = "tProf_Comp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tProf_Comp.aspx.resx"
+                    DependentUpon = "tProf_Comp.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tTL.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tTL.aspx.cs"
+                    DependentUpon = "tTL.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tTL.aspx.resx"
+                    DependentUpon = "tTL.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tTL_Afde_Peri.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tTL_Afde_Peri.aspx.cs"
+                    DependentUpon = "tTL_Afde_Peri.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tTL_Afde_Peri.aspx.resx"
+                    DependentUpon = "tTL_Afde_Peri.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Beheerder\tWerkn.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Beheerder\tWerkn.aspx.cs"
+                    DependentUpon = "tWerkn.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Beheerder\tWerkn.aspx.resx"
+                    DependentUpon = "tWerkn.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "CSS\BEOstyles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "CSS\BEOstyles_print.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_CompetentieLijst.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_CompetentieLijst.aspx.cs"
+                    DependentUpon = "beoAlgemeen_CompetentieLijst.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_CompetentieLijst.aspx.resx"
+                    DependentUpon = "beoAlgemeen_CompetentieLijst.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Contact.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Contact.aspx.cs"
+                    DependentUpon = "beoAlgemeen_Contact.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Contact.aspx.resx"
+                    DependentUpon = "beoAlgemeen_Contact.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Handleiding.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Handleiding.aspx.cs"
+                    DependentUpon = "beoAlgemeen_Handleiding.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Handleiding.aspx.resx"
+                    DependentUpon = "beoAlgemeen_Handleiding.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Info.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Info.aspx.cs"
+                    DependentUpon = "beoAlgemeen_Info.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Info.aspx.resx"
+                    DependentUpon = "beoAlgemeen_Info.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Links.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Links.aspx.cs"
+                    DependentUpon = "beoAlgemeen_Links.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Links.aspx.resx"
+                    DependentUpon = "beoAlgemeen_Links.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Login.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Login.aspx.cs"
+                    DependentUpon = "beoAlgemeen_Login.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoAlgemeen_Login.aspx.resx"
+                    DependentUpon = "beoAlgemeen_Login.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoBeoordelingen.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoBeoordelingen.aspx.cs"
+                    DependentUpon = "beoBeoordelingen.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoBeoordelingen.aspx.resx"
+                    DependentUpon = "beoBeoordelingen.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoDlgDoelAfsp.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoDlgToel.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoEinde.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoEinde.aspx.cs"
+                    DependentUpon = "beoEinde.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoEinde.aspx.resx"
+                    DependentUpon = "beoEinde.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Doelen.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Doelen.aspx.cs"
+                    DependentUpon = "beoInvoer_Doelen.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Doelen.aspx.resx"
+                    DependentUpon = "beoInvoer_Doelen.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Functie.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Functie.aspx.cs"
+                    DependentUpon = "beoInvoer_Functie.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Functie.aspx.resx"
+                    DependentUpon = "beoInvoer_Functie.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_NogInTeVullen.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_NogInTeVullen.aspx.cs"
+                    DependentUpon = "beoInvoer_NogInTeVullen.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_NogInTeVullen.aspx.resx"
+                    DependentUpon = "beoInvoer_NogInTeVullen.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Scores.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Scores.aspx.cs"
+                    DependentUpon = "beoInvoer_Scores.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Scores.aspx.resx"
+                    DependentUpon = "beoInvoer_Scores.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Voorblad.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Voorblad.aspx.cs"
+                    DependentUpon = "beoInvoer_Voorblad.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoInvoer_Voorblad.aspx.resx"
+                    DependentUpon = "beoInvoer_Voorblad.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport.aspx.cs"
+                    DependentUpon = "beoRapport.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport.aspx.resx"
+                    DependentUpon = "beoRapport.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport_bespreking.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport_bespreking.aspx.cs"
+                    DependentUpon = "beoRapport_bespreking.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoRapport_bespreking.aspx.resx"
+                    DependentUpon = "beoRapport_bespreking.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\beoWelkom_TL.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\beoWelkom_TL.aspx.cs"
+                    DependentUpon = "beoWelkom_TL.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\beoWelkom_TL.aspx.resx"
+                    DependentUpon = "beoWelkom_TL.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\Test.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Gebruiker\Test.aspx.cs"
+                    DependentUpon = "Test.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Gebruiker\Test.aspx.resx"
+                    DependentUpon = "Test.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Gebruiker\Test.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "js\beoValidation.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "js\General.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "js\RPC.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Cancel.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Edit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\email.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\email_allen.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\email_tekst.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Insert.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\n.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\pijllinks.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\pijlrechts.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\print.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\RapTierLogo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\report.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\select.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\select_sel.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Stavengrafiek.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Table.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\temp.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Update.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Vergrootglas.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\Vergrootglas_klein.bmp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\buttons\View.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\headers\amsterdamdro_home_logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\headers\DRO_logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\headers\DRO_logo_80perc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Pics\logo\menu_logo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "XML\Settings.xml"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
